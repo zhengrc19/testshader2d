@@ -22,7 +22,7 @@ Shader原意负责3D渲染过程中确定具体的光照、阴影和颜色；现
 
 如下图[2]，3D物体在shader中，先经过vertex函数，对节点的位置进行处理，然后输出的节点位置信息再输入到fragment函数中，确定像素具体的颜色信息。其中，函数执行过成中受到property属性值的影响。
 
-![pipeline](https://raw.githubusercontent.com/zhengrc19/testshader2d/master/Unity%20Shader%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/%E6%88%AA%E5%B1%8F2022-12-07%2001.25.56.png)
+![pipeline](https://raw.githubusercontent.com/zhengrc19/testshader2d/master/readme_imgs/screenshot.png)
 
 
 
@@ -167,7 +167,7 @@ float rowIndex = _RowCount - 1 - floor(index / _ColumnCount);
 
 * 创建shader后，不知如何作用在物体上。首先创建了UI Image，并创建模板shader文件代替为上述代码，但是没有效果。同时，在image属性当中尝试找到指定shader但是像下图一样，文字为灰，
 
-  ![cannot change shader](https://raw.githubusercontent.com/zhengrc19/testshader2d/master/Unity%20Shader%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20221207144611885.png)
+  ![setshader](https://raw.githubusercontent.com/zhengrc19/testshader2d/master/readme_imgs/image-20221207144611885.png)
 
   固定了material和shader，不让修改。
 
