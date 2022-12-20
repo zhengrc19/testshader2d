@@ -10,10 +10,12 @@ Ray Zheng  2022.12.20
 
 一个简单的实现思路为，在两个颜色的RGB值之间进行线性插值，即可得到中间的渐变颜色曲线。
 
+颜色间线性插值可以使用Shader自带的`lerp`函数。
+
 
 # Shader实践
 
-参考[Unity官方Shader文档](https://docs.unity3d.com/Manual/SL-ShadingLanguage.html)，以及[这个回答](https://answers.unity.com/questions/913898/horizontally-gradient-on-image-ui-element.html)，我写出一下代码：
+参考[Unity官方Shader文档](https://docs.unity3d.com/Manual/SL-ShadingLanguage.html)，以及[这个回答](https://answers.unity.com/questions/913898/horizontally-gradient-on-image-ui-element.html)，我写出以下代码：
 
 ```csharp
 Shader "Test/GradientShader" {
