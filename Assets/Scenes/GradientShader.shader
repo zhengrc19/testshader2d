@@ -1,8 +1,8 @@
 Shader "Test/GradientShader" {
     Properties {
         _MainTex ("Sprite Texture", 2D) = "white" {}
-        _Color ("Left Color", Color) = (1,1,1,1)
-        _Color2 ("Right Color", Color) = (1,1,1,1)
+        _Color ("Lower Color", Color) = (1,1,1,1)
+        _Color2 ("Upper Color", Color) = (1,1,1,1)
     }
 
     SubShader {
